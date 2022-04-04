@@ -1,0 +1,5 @@
+agile jira
+jenkins
+java oops concept
+size method 
+implicit

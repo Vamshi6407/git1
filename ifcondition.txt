@@ -1,0 +1,12 @@
+marks camparsion using if condition
+
+a!localVariables(
+   local!marks: 90,
+   if(local!marks < 60,
+     "pass",
+       if( and( local!marks>60, local!marks < 80 ),
+           "Dist",
+           "Topper"
+         )
+     )
+ )

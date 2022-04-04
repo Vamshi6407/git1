@@ -1,0 +1,116 @@
+Design Document for ZooAnimalMaintenanceRequest
+
+Groups:
+
+RMAZ_AdminGroup 
+RMAZ_AllusersGroup
+RMAZ_DirectorsGroup
+RMAZ_FullFillmentGroup
+RMAZ_EmpGroup
+
+Entities:
+
+Animal Table- ID,animal names and genders,ages
+Pen:-Id,pen name,animal names and description
+Request:	
+
+Records: 
+
+	Animal
+	Pen
+	Maintenance
+
+CDTs:
+
+	RMAZ_AnimalsList:-id,name,Photo,gender,age,Species,Pen Id
+	RMAZ_PenList: name and typesof each pen:  penId,pen Name,Pen Photo,pen Type,
+	RMAZ_RequestDetails:-  Request Id,request type,description,cost,date,status, 
+		created by,created on,updated by updated on,isActive,     EmpComments,FullfillComments,DirComments
+
+
+Constants:
+
+	Animals,Pendetails,Request type
+Folders:
+
+
+RMAZ_KnowledgeFolder
+	DocFolder
+	RMAZ_TempFiles
+	RMAZ_ImageFiles
+
+RMAZ_RuleFolder
+	RMAZ_QueryFolder
+	RMAZ_InterfaceFolder
+	RMAZ_ExpressionFolder
+	RMAZ_DecisionFolder
+RMAZ_ConstantFolder
+
+
+
+
+
+Expressions,Decisions
+
+
+
+Interfaces:
+
+	AddAnimaldetails
+	AddPendetails
+	RequestDetails
+	Updatedetails
+
+ProcessModels:
+	AddAnimals
+	AddPen
+	RequestDetails
+	UpdateDetails
+	
+
+NewsFeed:
+
+	
+	Completed Requests
+	Requests delievered
+
+
+Charts:
+	
+	AnimalList
+	Maintenance
+	
+
+Reports:
+
+	Over budget(Actual cost is greater than estimated cost)
+	Estimated cost compare with the actual cost
+	count of closed requests that were over budget
+ 	
+
+
+
+Actions:
+
+	Add animal
+	Add Pen
+
+
+Related Actions:
+
+	Update 
+	Delete
+	Request
+
+
+
+Site:
+
+	Home
+	Animal
+	Pen
+	MaintenanceRequest
+	Reports
+
+
+
